@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Custom styles for this template -->
+
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Roman numeral recognition</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 54px;
+        padding-bottom: 62px;
+      }
+
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+      html, body {
+        height: 100%;
+      }
+      .container{
+        min-height: 100%;
+      }
+      .container:after {
+        content: "";
+        display: block;
+      }
+      .py-xl-0{
+        height: 40px;
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Recognizer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('about') }}">About
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Portfolio Item Heading -->
+      <h1 class="my-4" style="text-align: center">Roman numeral recognition
+      </h1>
+
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <div class="col-md-2">
+          <h3 class="my-3">Description</h3>
+          <p>Draw a roman numeral to recognize.</p>
+          <p><u>Note:</u> Works better when numeral isn't too small and is not rotated on more than 30 deg.</p>
+          <p><u>Warning:</u> web-site is not adaptable, so please use it full-width...</p>
+        </div>
+
+        <div class="col-md-3" align="center">
+				<div style="position: relative;">
+					<canvas id="the_stage" width="200" height="200" align="center" style="border-style: solid; border-width: 2px; border-color: #1d2124;">Canvas</canvas><br>
+					</div>
+				<div style="position: relative;">
+					<button type="button" class="btn btn-default butt" onclick="clearCanvas()" align="center">Clear</button>
+					<button type="button" class="btn btn-default butt" id="pred" onclick="predict()" align="center">Predict</button>
+					</div>
+            </div>
+        <div class="col-md-4" align="right">
+          <div class="col-md-8"><span id="pred_text">Prediction result:</span> <br><b><span id="rec_result"> </span></b></div>
+          <div class="row clearfix">
+					<div id="prediction" style="display: none;"></div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+      <div class="row">
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- Footer -->
+    <footer class="py-xl-0 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; <a href="https://github.com/titardrew/roman-recognizer" style="color: powderblue">GitHub</a></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="static/vendor/bootstrap/js/draw.js"></script>
+  </body>
+</html>

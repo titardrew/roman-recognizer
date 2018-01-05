@@ -1,0 +1,28 @@
+/*!
+ * Start Bootstrap - Portfolio Item (https://startbootstrap.com/template-overviews/portfolio-item)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
+ */
+
+
+/** {*/
+  /*margin: 0;*/
+/*}*/
+/*html, body {*/
+  /*height: 100%;*/
+/*}*/
+/*.page-wrap {*/
+  /*min-height: 100%;*/
+  /*!* equal to footer height *!*/
+  /*margin-bottom: -142px;*/
+/*}*/
+/*.page-wrap:after {*/
+  /*content: "";*/
+  /*display: block;*/
+/*}*/
+/*.site-footer, .page-wrap:after {*/
+  /*height: 142px;*/
+/*}*/
+/*.site-footer {*/
+  /*background: orange;*/
+/*}*/
