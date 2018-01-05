@@ -114,7 +114,7 @@ function handleStart(evt) {
 			ongoingTouches.push(copyTouch(touches[i]));
 			context.beginPath();
 			//context.arc(touches[i].clientX - offset.x, touches[i].clientY - offset.y, 4, 0, 2 * Math.PI, false); // a circle at the start
-			context.fillStyle = "#aaaaaa";
+			context.fillStyle = "#000000";
 			context.fill();
 		}
 	}
@@ -138,7 +138,7 @@ function handleMove(evt) {
 				context.lineTo(touches[i].clientX - offset.x, touches[i].clientY - offset.y);
 				context.lineWidth = 30.0;
 				context.lineCap = 'round';
-				context.strokeStyle = "#aaaaaa";
+				context.strokeStyle = "#000000";
 				context.stroke();
 
 				ongoingTouches.splice(idx, 1, copyTouch(touches[i])); // swap in the new touch record
